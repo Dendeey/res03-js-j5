@@ -69,13 +69,47 @@ body .hidden {
 }
 body header {
   display: grid;
-  grid-template-columns: 0.2fr 1fr;
-  height: 10vh;
+  grid-template-columns: 0.3fr 1fr;
+  height: 15vh;
+}
+body header section:first-of-type {
+  border-right: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+body header section:first-of-type figure {
+  align-self: center;
+}
+body header section:last-of-type {
+  border-bottom: 1px solid;
 }
 body main {
   display: grid;
-  grid-template-columns: 0.2fr 1fr;
-  height: 90vh;
+  grid-template-columns: 0.3fr 1fr;
+  height: 100vh;
+}
+body main aside {
+  border-right: 1px solid;
+  padding-top: 6vh;
+  padding-left: 1vw;
+}
+body main aside nav h2 {
+  font-weight: bold;
+  font-size: 1.6em;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  font-family: "Montserrat", sans-serif;
+}
+body main aside nav ul li {
+  padding-bottom: 1vh;
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+}
+body main aside nav ul .submenu.open {
+  display: block;
+}
+body main aside nav ul .submenu.close {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

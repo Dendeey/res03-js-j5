@@ -22,16 +22,88 @@ body
     header
     {
         display: grid;
-        grid-template-columns: 0.2fr 1fr;
-        height: 10vh;
+        grid-template-columns: 0.3fr 1fr;
+        height: 15vh;
+        
+        section:first-of-type
+        {
+            border-right:  1px solid;
+            display: flex;
+            justify-content: center;
+            
+            figure
+            {
+                
+                align-self: center;
+                
+                
+                img
+                {
+                    
+                }
+            }
+        }
+        
+        section:last-of-type
+        {
+            border-bottom: 1px solid;
+        }
     }
     
     main
     {
         display: grid;
-        grid-template-columns: 0.2fr 1fr;
-        height: 90vh;
+        grid-template-columns: 0.3fr 1fr;
+        height: 100vh;
         
+        aside
+        {
+            border-right: 1px solid;
+            padding-top: 6vh;
+            padding-left: 1vw;
+            
+            nav
+            {
+                h2
+                {
+                    font-weight: bold;
+                    font-size: 1.6em;
+                    padding-bottom: 2vh;
+                    padding-top: 2vh;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                
+                ul
+                {
+                    li
+                    {
+                        
+                        padding-bottom: 1vh;
+                        font-size: 1.2em;
+                        font-family: 'Montserrat', sans-serif;
+                        
+                    }
+                    
+                    .submenu.open
+                    {
+                        display: block;
+                        
+                    }
+                    
+                    .submenu.close
+                    {
+                        display: none;
+                        
+                    }
+                    
+                }
+            }
+        }
+        
+        section
+        {
+            
+        }
     }
     
 }
