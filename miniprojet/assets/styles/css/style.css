@@ -75,10 +75,19 @@ body header {
 body header section:first-of-type {
   border-right: 1px solid;
   display: flex;
-  justify-content: center;
+  column-gap: 4em;
+  padding-top: 2vh;
+}
+body header section:first-of-type button {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  justify-self: left;
+  padding-left: 0.5em;
 }
 body header section:first-of-type figure {
-  align-self: center;
+  justify-self: center;
 }
 body header section:last-of-type {
   border-bottom: 1px solid;
@@ -100,15 +109,21 @@ body main aside nav h2 {
   padding-top: 2vh;
   font-family: "Montserrat", sans-serif;
 }
+body main aside nav h2 span .bi-caret-down.close::before {
+  content: "\f22c";
+}
+body main aside nav h2 span .bi-caret-down.open::before {
+  content: "\f238";
+}
 body main aside nav ul li {
   padding-bottom: 1vh;
   font-size: 1.2em;
   font-family: "Montserrat", sans-serif;
 }
-body main aside nav ul .submenu.open {
+body main aside nav .submenu.open {
   display: block;
 }
-body main aside nav ul .submenu.close {
+body main aside nav .submenu.close {
   display: none;
 }
 

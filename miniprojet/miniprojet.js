@@ -1,19 +1,13 @@
 let mainBtn = document.getElementsByClassName("main-btn");
 let submenus = document.getElementsByClassName("submenu");
-for(let i = 0; i < mainBtn; i++)
+for(let i = 0; i < submenus.length; i++)
 {
-    mainBtn.addEventListener("click", function(event)
+    
+    mainBtn[i].addEventListener("click", function()
     {
-        event.target.classList.toggle("open");
-        event.target.classList.toggle("close");
+        submenus[i].classList.toggle("close");
         
-        for(let i = 0; i < submenus.length; i++)
-        {
-            submenus[i].classList.toggle("open");
-            submenus[i].classList.toggle("close");
-        }
     });
-
 }
 
 window.addEventListener("DOMContentLoaded", function(){

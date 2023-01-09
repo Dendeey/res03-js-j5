@@ -29,13 +29,27 @@ body
         {
             border-right:  1px solid;
             display: flex;
-            justify-content: center;
+            column-gap: 4em;
+            padding-top: 2vh;
+            
+            button
+            {
+                font-size: 3rem;
+                background: none;
+                border: none;
+                cursor: pointer;
+                justify-self: left;
+                padding-left: 0.5em;
+                
+                span
+                {
+                    
+                }
+            }
             
             figure
             {
-                
-                align-self: center;
-                
+                justify-self: center;   
                 
                 img
                 {
@@ -71,6 +85,19 @@ body
                     padding-bottom: 2vh;
                     padding-top: 2vh;
                     font-family: 'Montserrat', sans-serif;
+                    
+                    span
+                    {
+                        .bi-caret-down.close::before 
+                        {
+                            content: "\f22c";
+                        }
+                        
+                        .bi-caret-down.open::before 
+                        {
+                            content: "\f238";
+                        }
+                    }
                 }
                 
                 ul
@@ -84,18 +111,18 @@ body
                         
                     }
                     
-                    .submenu.open
-                    {
-                        display: block;
+                }
+                
+                .submenu.open
+                {
+                    display: block;
                         
-                    }
+                }
                     
-                    .submenu.close
-                    {
-                        display: none;
+                .submenu.close
+                {
+                    display: none;
                         
-                    }
-                    
                 }
             }
         }
