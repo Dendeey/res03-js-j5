@@ -67,6 +67,19 @@ body {
 body .hidden {
   display: none;
 }
+body .open {
+  display: block;
+}
+body .close {
+  display: none;
+}
+body .style {
+  grid-column: 1/3;
+  border-top: 1px solid;
+}
+body .border-none {
+  border: none;
+}
 body header {
   display: grid;
   grid-template-columns: 0.3fr 1fr;
@@ -88,9 +101,6 @@ body header section:first-of-type button {
 }
 body header section:first-of-type figure {
   justify-self: center;
-}
-body header section:last-of-type {
-  border-bottom: 1px solid;
 }
 body main {
   display: grid;
@@ -120,11 +130,8 @@ body main aside nav ul li {
   font-size: 1.2em;
   font-family: "Montserrat", sans-serif;
 }
-body main aside nav .submenu.open {
-  display: block;
-}
-body main aside nav .submenu.close {
-  display: none;
+body main section {
+  border-top: 1px solid;
 }
 
 /*# sourceMappingURL=style.css.map */

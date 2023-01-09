@@ -1,15 +1,27 @@
-let mainBtn = document.getElementsByClassName("main-btn");
-let submenus = document.getElementsByClassName("submenu");
-for(let i = 0; i < submenus.length; i++)
-{
     
-    mainBtn[i].addEventListener("click", function()
-    {
-        submenus[i].classList.toggle("close");
-        
-    });
-}
 
 window.addEventListener("DOMContentLoaded", function(){
-    // tout le reste de mon script
+    
+    let mainBtn = document.getElementsByClassName("main-btn");
+    let submenus = document.getElementsByClassName("submenu");
+    for(let i = 0; i < submenus.length; i++)
+    {
+        
+        mainBtn[i].addEventListener("click", function()
+        {
+            submenus[i].classList.toggle("close");
+        });
+    }
+    
+    let asideBtn = document.getElementById("side-menu-btn");
+    let asideHidden = document.getElementById("aside-hidden");
+    let mainSection = document.querySelector("body > main > section");
+    let sectionBorderNone = document.querySelector("body > header > section:first-of-type");
+    asideBtn.addEventListener("click", function()
+    {
+        asideHidden.classList.toggle("close");
+        mainSection.classList.toggle("style");
+        sectionBorderNone.classList.toggle("border-none");
+    });
+    
 });
