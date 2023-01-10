@@ -1,6 +1,7 @@
     
 
 window.addEventListener("DOMContentLoaded", function(){
+    //ETAPE 1
     
     let mainBtn = document.getElementsByClassName("main-btn");
     let submenus = document.getElementsByClassName("submenu");
@@ -13,6 +14,8 @@ window.addEventListener("DOMContentLoaded", function(){
         });
     }
     
+    //ETAPE 2
+    
     let asideBtn = document.getElementById("side-menu-btn");
     let asideHidden = document.getElementById("aside-hidden");
     let mainSection = document.querySelector("body > main > section");
@@ -24,5 +27,9 @@ window.addEventListener("DOMContentLoaded", function(){
         sectionBorderNone.classList.toggle("border-right");
         
     });
+    
+    //ETAPE 3
+    
+    
     
 });

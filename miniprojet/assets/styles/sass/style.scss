@@ -142,6 +142,52 @@ body
         section
         {
             border-top: 1px solid;
+            
+            h2
+            {
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: #0077b6;
+                font-weight: 700;
+                margin-bottom: 4rem;
+            }
+            
+            section:first-of-type
+            {
+                border: none;
+                
+                .add-btn
+                {
+                    background-color: #023E8A;
+                    color: white;
+                    padding: 0.7rem 1.2rem;
+                    margin-bottom: 10vh;
+                    font-size: 1.2rem;
+                    border: none;
+                    border-radius: 0.2rem;
+                    box-shadow: 2px 2px 3px rgb(0 0 0 / 20%);
+                    cursor: pointer;
+                }
+            }
+            
+            section:last-of-type
+            {
+                border: none;
+                
+                table
+                {
+                    thead
+                    {
+                        tr
+                        {
+                            th
+                            {
+                            
+                            }
+                        }
+                    }
+                }
+            }
         }
         
     }
